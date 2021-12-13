@@ -2,6 +2,7 @@
     <main>
       <ChiSiamo/>
       <CosaFacciamo/>
+      <DoveLavoriamo/>
     </main>
 </template>
 
@@ -9,12 +10,14 @@
 
 import ChiSiamo from "@/components/ChiSiamo.vue"
 import CosaFacciamo from "@/components/CosaFacciamo.vue"
+import DoveLavoriamo from "@/components/DoveLavoriamo.vue"
 
 export default {
   name: 'SeoMain',
   components: {
     ChiSiamo,
     CosaFacciamo,
+    DoveLavoriamo
   }
 }
 </script>
