@@ -63,32 +63,32 @@ export default {
         menu : [
             {
                 title: "Home",
-                link: "",
+                link: "#",
             },
 
             {
                 title: "Who We Are",
-                link: "",
+                link: "#chi_siamo",
             },
 
             {
                 title: "What We Do",
-                link: "",
+                link: "#cosa_facciamo",
             },
 
             {
                 title: "Where We Work",
-                link: "",
+                link: "#dove_lavoriamo",
             },
 
             {
                 title: "Carrers",
-                link: "",
+                link: "#plans",
             },
 
             {
                 title: "News",
-                link: "",
+                link: "#news",
             }
         ]
     }
