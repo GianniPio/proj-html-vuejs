@@ -1,14 +1,19 @@
 <template>
-  <SeoHeader/>
+  <div>
+    <SeoHeader/>
+    <SeoMain/>
+  </div>
 </template>
 
 <script>
 import SeoHeader from './components/SeoHeader.vue'
+import SeoMain from './components/SeoMain.vue'
 
 export default {
   name: 'App',
   components: {
-    SeoHeader
+    SeoHeader,
+    SeoMain
   }
 }
 </script>
