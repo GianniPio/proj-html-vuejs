@@ -106,7 +106,8 @@ header {
     background-image: url("../../src/assets/images/1-hero-image.png");
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 550px;
+    background-position: center;
+    height: 600px;
     padding-top: 2% ;
 
     #container {

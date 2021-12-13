@@ -1,12 +1,18 @@
 <template>
     <main>
-
+      <ChiSiamo/>
     </main>
 </template>
 
 <script>
+
+import ChiSiamo from "@/components/ChiSiamo.vue"
+
 export default {
   name: 'SeoMain',
+  components: {
+    ChiSiamo,
+  }
 }
 </script>
 
