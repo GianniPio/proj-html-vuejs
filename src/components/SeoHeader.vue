@@ -9,12 +9,9 @@
 
         <!-- Menu -->
         <div id="menu">
-            <ul>
-                <li v-for="voice, i in menu" :key="i">
-                    <a :href="voice.link">{{voice.title}}</a>
-                </li>
-            </ul>
+         <Menu v-for="voice, i in menu" :key="i" :voices="voice"/>   
         </div>
+        
         
         <!-- Bottone -->
         <button>
@@ -27,9 +24,13 @@
 </template>
 
 <script>
+import Menu from "@/components/Menu.vue"
 
 export default {
   name: 'SeoHeader',
+  components: {
+    Menu,
+  },
 
   data() {
     return {
@@ -89,28 +90,11 @@ header {
     #menu {
 
         display: inline-block;
-        font-size: 13px;
+        font-size: 15px;
 
-        li {
-            display: inline;
-            padding: 20px;
-
-            a {
-                color: white;
-                text-decoration: none;
-
-                &:hover {
-                color: orange;
-                }
-            }
-
-
-           
-        }
     }
 
     button {
-            margin-top: -10px;
             height: 7%;
             line-height: 0%;
             padding: 20px;
