@@ -12,7 +12,9 @@
                 </p>
             </div>
 
-            <div class="centro"></div>
+            <div class="centro">
+                <ChiSiamoElem v-for="box, i in boxs" :key="i" :element="box"/>
+            </div>
 
         <img src="../../src/assets/images/agency-seo-desk-front.jpg" alt="foto desktop">
 
@@ -21,8 +23,35 @@
 </template>
 
 <script>
+
+import ChiSiamoElem from "@/components/ChiSiamoElem.vue"
+
 export default {
   name: 'ChiSiamo',
+  components: {
+      ChiSiamoElem
+  },
+  data() {
+      return {
+          boxs : [
+              {
+                  icon: "fas fa-road",
+                  title: "Establish Goals",
+                  text: "Aliquam non elit lacus. Praesent aliquet, ipsum id scelerisque convallis, mi liguia euismod odio, vel dictum mi risus a mi."
+              },
+              {
+                  icon: "fas fa-video",
+                  title: "Work With a Team",
+                  text: "Cras semper auctor aliquam. Sed porta sed lacus sit amet consecteur. Lorem ipsum dolor sit amet, consectetur adipiscin."
+              },
+              {
+                  icon: "fas fa-tint",
+                  title: "Get Resutls",
+                  text: "Vestibulum scelerisque egestas lectus sit amet molestie. Donec consectetur cursus est sed blandit. Nunc sed risus lacus."
+              }
+          ]
+      }
+  }
 }
 </script>
 
@@ -30,6 +59,7 @@ export default {
 
 #chi_siamo {
     background-color: #f8f8f8;
+    height: auto;
 
     #container {
         width: 60%;
@@ -50,6 +80,10 @@ export default {
                 color: grey;
                 font-weight: bold;
             }
+        }
+
+        .centro {
+            display: flex;
         }
 
         img {
