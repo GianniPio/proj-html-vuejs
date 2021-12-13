@@ -1,23 +1,31 @@
 <template>
     <!-- hedaer -->
     <header>
+        <!-- Parte di sopra -->
+        <div id="sopra">
+            <!-- logo -->
+            <div id="logo">
+                <img src="../../src/assets/images/logo_seo_w_1x.png" alt="Logo della pagina">
+            </div>
 
-        <!-- logo -->
-        <div id="logo">
-            <img src="../../src/assets/images/logo_seo_w_1x.png" alt="Logo della pagina">
+            <!-- Menu -->
+            <div id="menu">
+            <Menu v-for="voice, i in menu" :key="i" :voices="voice"/>
+
+            <!-- Bottone -->
+            <button>
+                <span>GET IN TOUCH NOW</span>
+            </button>
+            </div>
+            
+            
+            
         </div>
 
-        <!-- Menu -->
-        <div id="menu">
-         <Menu v-for="voice, i in menu" :key="i" :voices="voice"/>   
-        </div>
-        
-        
-        <!-- Bottone -->
-        <button>
-            <span>GET IN TOUCH NOW</span>
-        </button>
+        <!-- Parte di sotto -->
+        <div id="sotto">
 
+        </div>
     </header>
 
     
@@ -80,34 +88,41 @@ header {
     background-color: purple;
     height: 600px;
     padding: 2% 10%;
-    display: flex;
-    justify-content: space-between;
 
-    img {
-    width: 100%;
+    #sopra {
+
+        img {
+            width: 10%;
+            float: left;
+        }
+
+        #menu {
+
+            width: 90%;
+
+            button {
+                height: 7%;
+                line-height: 0%;
+                padding: 20px;
+                border-radius: 50px;
+                background-color: orange;
+                border: none;
+                cursor: pointer;
+                float: right;
+
+                span {
+                    color: white;
+                    font-weight: bold;
+                }
+            } 
+        }
+
+        
     }
 
-    #menu {
+    
 
-        display: inline-block;
-        font-size: 15px;
-
-    }
-
-    button {
-            height: 7%;
-            line-height: 0%;
-            padding: 20px;
-            border-radius: 50px;
-            background-color: orange;
-            border: none;
-            cursor: pointer;
-
-            span {
-                color: white;
-                font-weight: bold;
-            }
-        } 
+    
 }
 
 

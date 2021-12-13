@@ -18,20 +18,28 @@ export default {
 
 <style scoped lang="scss">
 
- li {
+ul {
+    
+    margin-left: 50px;
+    list-style-type: none;
+    
 
-    display: flex;
-    padding: 20px;
+    li {
+        float: left;
+        padding: 30px;
+        font-size: 12px;
 
-    a {
-        color: white;
-        text-decoration: none;
+        a {
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
 
-        &:hover {
-        color: orange;
+            &:hover {
+                color: #ffa837
+            }
         }
     }
-
+    
 }
 
 </style>
