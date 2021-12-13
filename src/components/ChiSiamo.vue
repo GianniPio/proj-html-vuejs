@@ -1,6 +1,8 @@
 <template>
     <section id="chi_siamo">
+
         <div id="container">
+
             <div class="sopra">
                 <h1>
                     Meet The New Agency SEO Template From The Avada Team
@@ -9,8 +11,11 @@
                     Sed ut perspiciatis unde omnis natus error sit voluptatem accusantium doloremque laudantium.
                 </p>
             </div>
+
             <div class="centro"></div>
-            <div class="sotto"></div>
+
+        <img src="../../src/assets/images/agency-seo-desk-front.jpg" alt="foto desktop">
+
         </div>
     </section>
 </template>
@@ -45,6 +50,10 @@ export default {
                 color: grey;
                 font-weight: bold;
             }
+        }
+
+        img {
+            width: 100%;
         }
     }
 }
