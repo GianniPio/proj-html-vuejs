@@ -1,42 +1,49 @@
 <template>
     <!-- hedaer -->
     <header>
-        <!-- Parte di sopra -->
-        <div id="sopra">
-            <!-- logo -->
-            <div id="logo">
-                <img src="../../src/assets/images/logo_seo_w_1x.png" alt="Logo della pagina">
+        <!-- Contenitore -->
+        <div id="container">
+
+            <!-- Parte di sopra -->
+            <div id="sopra">
+
+                <!-- logo -->
+                <div id="logo">
+                    <img src="../../src/assets/images/logo_seo_w_1x.png" alt="Logo della pagina">
+                </div>
+
+                <!-- Menu -->
+                <div id="menu">
+
+                <!-- Stampa gli elementi tramite le props in Menu -->
+                <Menu v-for="voice, i in menu" :key="i" :voices="voice"/>
+
+                <!-- Bottone -->
+                <button>
+                    <span>GET IN TOUCH NOW</span>
+                </button>
+                </div>
             </div>
 
-            <!-- Menu -->
-            <div id="menu">
-            <Menu v-for="voice, i in menu" :key="i" :voices="voice"/>
+            <!-- Parte di sotto -->
+            <div id="sotto">
 
-            <!-- Bottone -->
-            <button>
-                <span>GET IN TOUCH NOW</span>
-            </button>
+                <!-- Testo -->
+                <div class="descr">
+                    <h1>
+                        SEM Campaigns Made Simple With Avada
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Phasellus eu ornare erat. Curabitur pulvinar elit.
+                    </p>
+                    
+                    <!-- Bottoni -->
+                    <button class="orange">BUY AVADA NOW</button>
+                    <button class="blue">CONTACTS US</button>
+
+                </div>
             </div>
-            
-            
-            
-        </div>
-
-        <!-- Parte di sotto -->
-        <div id="sotto">
-            <div class="descr">
-                <h1>
-                    SEM Campaigns Made Simple With Avada
-                </h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Phasellus eu ornare erat. Curabitur pulvinar elit.
-                </p>
-                
-                <button class="orange">BUY AVADA NOW</button>
-                <button class="blue">CONTACTS US</button>
-
-            </div>
-        </div>
+        </div>   
     </header>
 
     
@@ -99,10 +106,14 @@ header {
     background-image: url("../../src/assets/images/1-hero-image.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 600px;
-    padding: 2% 10%;
+    min-height: 550px;
+    padding-top: 2% ;
 
-    #sopra {
+    #container {
+        width: 60%;
+        margin: 0 auto;
+
+        #sopra {
         width: 100%;
         display: block;
         padding-bottom: 10%;
@@ -114,14 +125,14 @@ header {
 
         #menu {
 
-            width: 90%;
+        width: 90%;
 
             button {
                 height: 7%;
                 line-height: 0%;
                 padding: 20px;
                 border-radius: 50px;
-                background-color: orange;
+                background-color: #ffa837;
                 border: none;
                 cursor: pointer;
                 float: right;
@@ -159,7 +170,7 @@ header {
             button {
 
                 border-radius: 20px;
-                padding: 3%;
+                padding: 4%;
                 margin: 5px;
                 border: none;
                 color: white;
@@ -182,6 +193,11 @@ header {
         }
 
     }
+
+
+    }
+
+    
  
 
     

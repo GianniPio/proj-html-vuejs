@@ -26,7 +26,7 @@ ul {
 
     li {
         float: left;
-        padding: 30px;
+        padding: 13px;
         font-size: 12px;
 
         a {
