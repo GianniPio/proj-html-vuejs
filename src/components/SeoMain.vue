@@ -5,6 +5,7 @@
       <Where/>
       <Plans/>
       <News/>
+      <Clients/>
     </main>
 </template>
 
@@ -15,6 +16,7 @@ import What from "@/components/What.vue"
 import Where from "@/components/Where.vue"
 import Plans from "@/components/Plans.vue"
 import News from "@/components/News.vue"
+import Clients from "@/components/Clients.vue"
 
 export default {
   name: 'SeoMain',
@@ -23,7 +25,8 @@ export default {
     What,
     Where,
     Plans,
-    News
+    News,
+    Clients
   }
 }
 </script>
