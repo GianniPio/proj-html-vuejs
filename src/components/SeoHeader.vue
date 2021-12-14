@@ -111,7 +111,7 @@ header {
     padding-top: 2% ;
 
     #container {
-        width: 60%;
+        width: 70%;
         margin: 0 auto;
 
         #sopra {

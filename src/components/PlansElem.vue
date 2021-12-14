@@ -32,7 +32,6 @@ export default {
     margin: 10px;
     text-align: center;
     padding: 5%;
-    width: calc(91% / 4);
     display: inline-block;
 
     h6 {

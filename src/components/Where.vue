@@ -44,7 +44,7 @@ export default {
     text-align: center;
 
     #container {
-        width: 60%;
+        width: 70%;
         margin: 0 auto;
 
         .sopra {
