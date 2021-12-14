@@ -11,7 +11,7 @@
 
             <div class="centro">
                 <div class="box active">
-                    <img :src="boxs[clientActive].image" :alt="boxs[clientActive].name">
+                    <img :src="require('../assets/images/'+boxs[clientActive].image)" :alt="boxs[clientActive].name">
                     <p class="italic">{{boxs[clientActive].text}}</p>
                     <p><span>{{boxs[clientActive].name}}</span>, {{boxs[clientActive].work}} </p>
                 </div>
@@ -35,14 +35,14 @@ export default {
           clientActive: 0,
           boxs : [
               {
-                  image: "../../src/assets/images/testimonials-1.jpg",
+                  image: "testimonials-1.jpg",
                   text: "Ability proceeds from a fusion of skills, knowledge,understanding and imagination, consolidated by experience.",
                   name: "Jennifer Lopez",
                   work: "FULL STACK DEVELOPER",
                   active: true
               },
               {
-                  image: "../../src/assets/images/testimonials-1.jpg",
+                  image: "testimonials-2.jpg",
                   text: "Ability proceeds from a fusion of skills, knowledge,understanding and imagination, consolidated by experience.",
                   name: "Luis Desalvo",
                   work: "CREO TECH",
@@ -134,7 +134,7 @@ export default {
             cursor: pointer;
 
             &:hover {
-                border: 1px solid red;
+                background-color: black;
             }
         }
     }
