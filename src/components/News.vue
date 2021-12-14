@@ -16,6 +16,8 @@
                 <NewsElem v-for="box, i in boxs" :key="i" :element="box"/>
             </div>
 
+            <button>GO TO NEWS</button>
+
         </div>
     </section>
 </template>
@@ -65,6 +67,7 @@ export default {
     #container {
         width: 70%;
         margin: 0 auto;
+        text-align: center;
 
         .sopra {
             text-align: center;
@@ -88,6 +91,19 @@ export default {
 
         .centro {
             display: flex;
+        }
+
+        button {
+            background-color: orange;
+            border-radius: 20px;
+            padding: 10px;
+            border: none;
+            color: white;
+            margin: 10px 0 50px 0;
+
+            &:hover{
+                filter: brightness(0.5);
+            }
         }
     }
 }
