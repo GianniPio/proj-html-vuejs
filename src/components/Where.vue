@@ -13,7 +13,11 @@
             </div>
 
             <div class="centro">
-                <DoveLavoriamoElem/>
+                <WhereElem/>
+            </div>
+
+            <div class="sotto">
+                <button>VIEW OUR WORK</button>
             </div>
 
         </div>
@@ -22,12 +26,12 @@
 
 <script>
 
-import DoveLavoriamoElem from "@/components/DoveLavoriamoElem.vue"
+import WhereElem from "@/components/WhereElem.vue"
 
 export default {
-  name: 'DoveLavoriamo',
+  name: 'Where',
   components: {
-      DoveLavoriamoElem,
+      WhereElem,
   }
 }
 </script>
@@ -37,6 +41,7 @@ export default {
 #dove_lavoriamo {
     background-color: #f8f8f8;
     height: auto;
+    text-align: center;
 
     #container {
         width: 60%;
@@ -65,6 +70,19 @@ export default {
 
         img {
             width: 100%;
+        }
+
+        button {
+        background-color: orange;
+        border: none;
+        border-radius: 20px;
+        color: white;
+        padding: 1%;
+        margin-bottom: 15px;
+
+        &:hover {
+            filter: brightness(0.5);
+        }
         }
     }
 }

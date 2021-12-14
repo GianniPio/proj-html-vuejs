@@ -6,14 +6,12 @@
         <img src="../../src/assets/images/case-study-gallery-4-1-1200x900.jpg" alt="Immagine">
         <img src="../../src/assets/images/case-study-gallery-5-1-1200x900.jpg" alt="Immagine">
         <img src="../../src/assets/images/case-study-gallery-6-1-1200x900.jpg" alt="Immagine">
-
-        <button>VIEW OUR WORK</button>
     </div>
 </template>
 
 <script>
 export default {
-  name: 'DoveLavoriamoElem',
+  name: 'WhereElem',
 }
 </script>
 
@@ -28,13 +26,5 @@ export default {
         margin: 5px;
     }
 
-    button {
-        background-color: orange;
-        border: none;
-        border-radius: 20px;
-        color: white;
-        padding: 1%;
-        margin-bottom: 15px;
-    }
 }
 </style>

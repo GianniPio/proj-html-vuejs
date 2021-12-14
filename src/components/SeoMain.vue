@@ -1,23 +1,23 @@
 <template>
     <main>
-      <ChiSiamo/>
-      <CosaFacciamo/>
-      <DoveLavoriamo/>
+      <Who/>
+      <What/>
+      <Where/>
     </main>
 </template>
 
 <script>
 
-import ChiSiamo from "@/components/ChiSiamo.vue"
-import CosaFacciamo from "@/components/CosaFacciamo.vue"
-import DoveLavoriamo from "@/components/DoveLavoriamo.vue"
+import Who from "@/components/Who.vue"
+import What from "@/components/What.vue"
+import Where from "@/components/Where.vue"
 
 export default {
   name: 'SeoMain',
   components: {
-    ChiSiamo,
-    CosaFacciamo,
-    DoveLavoriamo
+    Who,
+    What,
+    Where
   }
 }
 </script>

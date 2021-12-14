@@ -13,7 +13,7 @@
             </div>
 
             <div class="centro">
-                <CosaFacciamoElem v-for="box, i in boxs" :key="i" :element="box"/>
+                <WhatElem v-for="box, i in boxs" :key="i" :element="box"/>
             </div>
 
         </div>
@@ -22,12 +22,12 @@
 
 <script>
 
-import CosaFacciamoElem from "@/components/CosaFacciamoElem.vue"
+import WhatElem from "@/components/WhatElem.vue"
 
 export default {
-  name: 'CosaFacciamo',
+  name: 'What',
   components: {
-      CosaFacciamoElem,
+      WhatElem,
   },
   data() {
       return {

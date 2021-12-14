@@ -13,7 +13,7 @@
             </div>
 
             <div class="centro">
-                <ChiSiamoElem v-for="box, i in boxs" :key="i" :element="box"/>
+                <WhoElem v-for="box, i in boxs" :key="i" :element="box"/>
             </div>
 
         <img src="../../src/assets/images/agency-seo-desk-front.jpg" alt="foto desktop">
@@ -24,12 +24,12 @@
 
 <script>
 
-import ChiSiamoElem from "@/components/ChiSiamoElem.vue"
+import WhoElem from "@/components/WhoElem.vue"
 
 export default {
-  name: 'ChiSiamo',
+  name: 'Who',
   components: {
-      ChiSiamoElem
+      WhoElem
   },
   data() {
       return {
