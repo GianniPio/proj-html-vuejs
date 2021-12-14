@@ -3,6 +3,7 @@
       <Who/>
       <What/>
       <Where/>
+      <Plans/>
     </main>
 </template>
 
@@ -11,13 +12,15 @@
 import Who from "@/components/Who.vue"
 import What from "@/components/What.vue"
 import Where from "@/components/Where.vue"
+import Plans from "@/components/Plans.vue"
 
 export default {
   name: 'SeoMain',
   components: {
     Who,
     What,
-    Where
+    Where,
+    Plans
   }
 }
 </script>
