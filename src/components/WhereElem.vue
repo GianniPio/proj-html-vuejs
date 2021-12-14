@@ -1,29 +1,27 @@
 <template>
     <div class="box">
-        <img src="../../src/assets/images/case-study-gallery-3-1-1200x900.jpg" alt="Immagine">
-        <img src="../../src/assets/images/case-study-gallery-2-1200x900.jpg" alt="Immagine">
-        <img src="../../src/assets/images/case-study-gallery-1-1-1200x900.jpg" alt="Immagine">
-        <img src="../../src/assets/images/case-study-gallery-4-1-1200x900.jpg" alt="Immagine">
-        <img src="../../src/assets/images/case-study-gallery-5-1-1200x900.jpg" alt="Immagine">
-        <img src="../../src/assets/images/case-study-gallery-6-1-1200x900.jpg" alt="Immagine">
+        <img :src="require(`../assets/images/${element}`)" alt="Immagine">
     </div>
 </template>
 
 <script>
 export default {
   name: 'WhereElem',
+  props: {
+      element: String,
+  }
 }
 </script>
 
 <style scoped lang="scss">
 .box {
 
-    text-align: center;
-    width: 100%;
+    width: calc(88% / 3);
+    display: inline-block;
+    margin: 15px;
 
     img {
-        width: calc(100% / 3.5);
-        margin: 5px;
+        width: 100%;
     }
 
 }

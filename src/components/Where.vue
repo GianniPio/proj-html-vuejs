@@ -13,7 +13,7 @@
             </div>
 
             <div class="centro">
-                <WhereElem/>
+                <WhereElem v-for="image, i in images" :key="i" :element="image"/>
             </div>
 
             <div class="sotto">
@@ -32,7 +32,19 @@ export default {
   name: 'Where',
   components: {
       WhereElem,
-  }
+  },
+    data() {
+        return {
+            images : [
+                "case-study-gallery-3-1-1200x900.jpg",
+                "case-study-gallery-2-1200x900.jpg",
+                "case-study-gallery-1-1-1200x900.jpg",
+               "case-study-gallery-4-1-1200x900.jpg",
+               "case-study-gallery-5-1-1200x900.jpg",
+               "case-study-gallery-6-1-1200x900.jpg"
+            ]
+        }
+    }
 }
 </script>
 
@@ -62,14 +74,6 @@ export default {
                 color: grey;
                 font-weight: bold;
             }
-        }
-
-        .centro {
-            display: flex;
-        }
-
-        img {
-            width: 100%;
         }
 
         button {

@@ -94,7 +94,7 @@ export default {
         }
 
         button {
-            background-color: orange;
+            background-color: #ffa837;
             border-radius: 20px;
             padding: 10px;
             border: none;
