@@ -39,14 +39,14 @@ export default {
                   text: "Ability proceeds from a fusion of skills, knowledge,understanding and imagination, consolidated by experience.",
                   name: "Jennifer Lopez",
                   work: "FULL STACK DEVELOPER",
-                  active: 0
+                  active: true
               },
               {
                   image: "../../src/assets/images/testimonials-1.jpg",
                   text: "Ability proceeds from a fusion of skills, knowledge,understanding and imagination, consolidated by experience.",
                   name: "Luis Desalvo",
                   work: "CREO TECH",
-                  active: 1
+                  active: true
               }
           ]
       }
