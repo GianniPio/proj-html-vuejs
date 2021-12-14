@@ -13,7 +13,7 @@
             </div>
 
             <div class="centro">
-                <WhereElem v-for="image, i in images" :key="i" :element="image"/>
+                <WhereElem v-for="image, i in images" :key="i" :element="image" :index="i"/>
             </div>
 
             <div class="sotto">

@@ -1,6 +1,6 @@
 <template>
     <div class="box">
-        <img :src="require(`../assets/images/${element}`)" alt="Immagine">
+        <img :src="require(`../assets/images/${element}`)" :alt="index">
     </div>
 </template>
 
@@ -9,6 +9,7 @@ export default {
   name: 'WhereElem',
   props: {
       element: String,
+      index: String,
   }
 }
 </script>
