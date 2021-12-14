@@ -1,5 +1,6 @@
 <template>
     <section id="cosa_facciamo">
+        <img :src="require('../../src/assets/images/pattern_background.png')" alt="">
 
         <div id="container">
 
@@ -67,10 +68,19 @@ export default {
 #cosa_facciamo {
     background-color: #051745;
     height: auto;
+    position: relative;
+
+    img {
+        width: 100%;
+    }
 
     #container {
         width: 70%;
         margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
         .sopra {
             text-align: center;
@@ -91,10 +101,8 @@ export default {
 
         .centro {
             display: flex;
-        }
+            padding-bottom: 15%;
 
-        img {
-            width: 100%;
         }
     }
 }
