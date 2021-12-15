@@ -81,7 +81,7 @@ export default {
         .sopra {
             width: 60%;
             margin: 0 auto;
-            padding: 5% 0 10% 0;
+            padding: 5%;
             color: white;
 
             h2 {
@@ -92,6 +92,10 @@ export default {
             p {
                 font-weight: bold;
             }
+        }
+
+        .centro {
+            padding-bottom: 5%;
         }
     }
 }

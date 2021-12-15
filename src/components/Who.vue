@@ -74,6 +74,8 @@ export default {
             h1 {
                 font-size: 30px;
                 padding-bottom: 2%;
+                width: 80%;
+                margin: 0 auto;
             }
 
             p {

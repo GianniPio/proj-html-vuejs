@@ -67,7 +67,6 @@ export default {
 
 #cosa_facciamo {
     background-color: #051745;
-    height: auto;
     position: relative;
 
     img {
@@ -85,8 +84,7 @@ export default {
         .sopra {
             text-align: center;
             width: 60%;
-            margin: 0 auto;
-            padding: 5% 0 10% 0;
+            margin: 5% auto;
 
             h1 {
                 font-size: 30px;
@@ -96,6 +94,8 @@ export default {
 
             p {
                 color: white;
+                width: 60%;
+                margin: 0 auto;
             }
         }
 

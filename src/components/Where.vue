@@ -63,7 +63,7 @@ export default {
             text-align: center;
             width: 60%;
             margin: 0 auto;
-            padding: 5% 0 10% 0;
+            padding: 5% 0;
 
             h1 {
                 font-size: 30px;
@@ -82,7 +82,7 @@ export default {
         border-radius: 20px;
         color: white;
         padding: 1%;
-        margin-bottom: 15px;
+        margin: 5% 0;
 
         &:hover {
             filter: brightness(0.5);

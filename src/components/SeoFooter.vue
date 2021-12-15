@@ -2,6 +2,7 @@
     <footer>
       <Logo/>
       <Consult/>
+      <Copyright/>
     </footer>
 </template>
 
@@ -9,12 +10,14 @@
 
 import Logo from "@/components/Logo.vue/"
 import Consult from "@/components/Consult.vue/"
+import Copyright from "@/components/Copyright.vue"
 
 export default {
   name: 'SeoFooter',
   components: {
     Logo,
-    Consult
+    Consult,
+    Copyright
   }
 }
 </script>
