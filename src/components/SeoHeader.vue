@@ -16,13 +16,19 @@
                 <div id="menu">
 
                 <!-- Stampa gli elementi tramite le props in Menu -->
-                <Menu v-for="voice, i in menu" :key="i" :voices="voice"/>
+                <ul>
+                  <Menu v-for="voice, i in menu" :key="i" :voices="voice"/>  
+                </ul>
 
-                <!-- Bottone -->
                 <button>
                     <span>GET IN TOUCH NOW</span>
                 </button>
+
                 </div>
+
+                <!-- Bottone -->
+                
+                
             </div>
 
             <!-- Parte di sotto -->
@@ -126,28 +132,35 @@ header {
 
         #menu {
 
-        width: 90%;
+        display: flex;
+        justify-content: flex-end;
+
+            ul {
+                list-style-type: none;
+            }
 
             button {
-                height: 7%;
-                line-height: 0%;
-                padding: 20px;
-                border-radius: 50px;
-                background-color: #ffa837;
-                border: none;
-                cursor: pointer;
-                float: right;
+            padding: 20px;
+            line-height: 0%;
+            border-radius: 50px;
+            background-color: #ffa837;
+            border: none;
+            cursor: pointer;
+            margin: 0 10px;
 
-                &:hover {
-                    filter: brightness(0.5)
-                }
+            &:hover {
+                filter: brightness(0.5)
+            }
 
-                span {
-                    color: white;
-                    font-weight: bold;
-                }
-            } 
+            span {
+                color: white;
+                font-weight: bold;
+            }
+        } 
         }
+
+        
+        
     }
 
     #sotto {

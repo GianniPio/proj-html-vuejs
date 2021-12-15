@@ -1,10 +1,7 @@
 <template>
-    <ul>
-        <li>
-            <a :href="voices.link">{{voices.title}}</a>
-        </li>
-    </ul>
-
+    <li>
+        <a :href="voices.link">{{voices.title}}</a>
+    </li>
 </template>
 
 <script>
@@ -18,28 +15,20 @@ export default {
 
 <style scoped lang="scss">
 
-ul {
-    
-    margin-left: 50px;
-    list-style-type: none;
-    
+li {
+    float: left;
+    padding: 13px;
+    font-size: 12px;
 
-    li {
-        float: left;
-        padding: 13px;
-        font-size: 12px;
+    a {
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
 
-        a {
-            color: #fff;
-            font-weight: bold;
-            text-decoration: none;
-
-            &:hover {
-                color: #ffa837
-            }
+        &:hover {
+            color: #ffa837
         }
     }
-    
 }
 
 </style>

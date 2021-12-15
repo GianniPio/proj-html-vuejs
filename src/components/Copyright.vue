@@ -114,12 +114,6 @@ export default {
         }
     }
 
-    #menu {
-
-        margin: 2% 0 3% 0;
-
-    }
-
     #copy {
 
         text-align: center;
@@ -130,15 +124,11 @@ export default {
         }
     }
 
-    #social {
-
-
-    }
-
     ul {
         display: flex;
         justify-content: center;
         list-style-type: none;
+        padding: 3% 0;
     }
 
 
