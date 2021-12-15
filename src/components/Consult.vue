@@ -48,8 +48,9 @@ export default {
             }
 
             p {
-                font-weight: bold;
                 padding-bottom: 5%;
+                width: 50%;
+                margin: 0 auto;
             }
 
             button {
