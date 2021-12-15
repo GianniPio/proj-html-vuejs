@@ -58,6 +58,7 @@ export default {
                 border: none;
                 padding: 2%;
                 border-radius: 50px;
+                font-weight: bold;
 
                 &:hover {
                     filter: brightness(0.8);

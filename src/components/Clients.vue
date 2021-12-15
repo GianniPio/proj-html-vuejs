@@ -18,8 +18,8 @@
             </div>
 
             <div>
-                <button @click="indietro"></button>
-                <button @click="avanti"></button>
+                <button :class="boxs[0].active === true ? 'active' : ''" @click="indietro"></button>
+                <button :class="boxs[1].active === true ? 'active' : ''" @click="avanti"></button>
             </div>
         </div>
     </section>
@@ -46,7 +46,7 @@ export default {
                   text: "Ability proceeds from a fusion of skills, knowledge,understanding and imagination, consolidated by experience.",
                   name: "Luis Desalvo",
                   work: "CREO TECH",
-                  active: true
+                  active: false
               }
           ]
       }
@@ -55,12 +55,20 @@ export default {
         avanti(){
 
             this.clientActive = 1;
+
+            this.boxs[this.clientActive - 1].active = false,
+
+            this.boxs[this.clientActive].active = true
             
         },
 
         indietro(){
 
             this.clientActive = 0;
+
+            this.boxs[this.clientActive + 1].active = false,
+
+            this.boxs[this.clientActive].active = true
         }
 
     
@@ -85,18 +93,16 @@ export default {
             text-align: center;
             width: 60%;
             margin: 0 auto;
-            padding: 5% 0 10% 0;
+            padding: 5% 0 5% 0;
 
             h1 {
                 font-size: 30px;
-                padding-bottom: 2%;
             }
         }
 
         .centro {
 
             .box {
-                margin: 10px;
                 text-align: center;
                 display: none;
 
@@ -134,6 +140,10 @@ export default {
             cursor: pointer;
 
             &:hover {
+                background-color: black;
+            }
+
+            &.active {
                 background-color: black;
             }
         }
