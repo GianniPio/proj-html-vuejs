@@ -1,17 +1,24 @@
 <template>
     <div id="plans">
-        <div class="container">
 
+        <!-- Contenitore -->
+
+        <div class="container">
+            <!-- Parte di sopra -->
             <div class="sopra">
+                <!-- Titolo -->
                 <h2>
                     Our Plans
                 </h2>
+                <!-- Paragrafo -->
                 <p>
                     Sed ut perspiciatis unde omnis natus error sit voluptatem accusantium doloremque laudantium.
                 </p>
             </div>
 
+            <!-- Parte centrale -->
             <div class="centro">
+                <!-- Stamap gli elementi di PlansElem, in base all'array -->
                 <PlansElem v-for="box, i in boxs" :key="i" :element="box"/>
             </div>
 
@@ -30,7 +37,7 @@ export default {
   },
   data() {
       return {
-          boxs : [
+          boxs : [ //array per la stampa dei box
               {
                   title: "Standard",
                   price: "19",

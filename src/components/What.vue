@@ -1,9 +1,12 @@
 <template>
     <section id="cosa_facciamo">
+        <!-- Sfondo della pagina -->
         <img :src="require('../../src/assets/images/pattern_background.png')" alt="">
 
+        <!-- Contenitore -->
         <div id="container">
 
+            <!-- Parte sopra -->
             <div class="sopra">
                 <h1>
                     See Our Top Notch Services
@@ -13,8 +16,9 @@
                 </p>
             </div>
 
+            <!-- Parte centrale -->
             <div class="centro">
-                <WhatElem v-for="box, i in boxs" :key="i" :element="box"/>
+                <WhatElem v-for="box, i in boxs" :key="i" :element="box"/> <!-- Stampa gli elementi di WhatElem, in base all'array -->
             </div>
 
         </div>
@@ -32,7 +36,7 @@ export default {
   },
   data() {
       return {
-          boxs : [
+          boxs : [  // array per la stampa dei box
               {
                   icon: "fab fa-google",
                   title: "Google SEO",

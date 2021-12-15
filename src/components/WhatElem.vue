@@ -1,5 +1,6 @@
 <template>
     <div class="box">
+        <!-- Prende i dati dell'array tramite la prop -->
         <i :class="element.icon"></i>
         <h6>{{element.title}}</h6>
         <p>{{element.text}}</p>

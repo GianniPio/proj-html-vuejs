@@ -1,4 +1,5 @@
 <template>
+    <!-- Prende i dati dell'array tramite la props -->
     <div class="box">
         <img :src="require(`../assets/images/${element.image}`)" :alt="element.title">
         <span class="title">{{element.title}}</span>

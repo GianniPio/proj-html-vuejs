@@ -1,5 +1,6 @@
 <template>
     <div class="box">
+        <!-- Prende i dati dell'array tramite le props -->
         <img :src="require(`../assets/images/${element}`)" :alt="index">
     </div>
 </template>

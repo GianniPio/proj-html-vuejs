@@ -1,5 +1,6 @@
 <template>
     <div class="box">
+        <!-- Prende i dati dell'array tramite la props -->
         <h6>{{element.title}}</h6>
         <p>
             <sup>$</sup>

@@ -1,6 +1,6 @@
 <template>
     <li>
-        <a :href="voices.link">{{voices.title}}</a>
+        <a :href="voices.link">{{voices.title}}</a> <!-- Prende i dati dell'array tramite le props -->
     </li>
 </template>
 

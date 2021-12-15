@@ -1,15 +1,20 @@
 <template>
     <section id="clients">
 
+        <!-- Contenitore -->
         <div id="container">
 
+            <!-- Parte di sopra -->
             <div class="sopra">
+                <!-- Titolo -->
                 <h1>
                     Whats Our Clients Say
                 </h1>
             </div>
 
+            <!-- Parte centrale -->
             <div class="centro">
+                <!-- Prende i dati dell'array -->
                 <div class="box active">
                     <img :src="require('../assets/images/'+boxs[clientActive].image)" :alt="boxs[clientActive].name">
                     <p class="italic">{{boxs[clientActive].text}}</p>
@@ -18,6 +23,7 @@
             </div>
 
             <div>
+                <!-- Aggiunge la classe active tramite la funzione avanti o indietro -->
                 <button :class="boxs[0].active === true ? 'active' : ''" @click="indietro"></button>
                 <button :class="boxs[1].active === true ? 'active' : ''" @click="avanti"></button>
             </div>
@@ -33,7 +39,7 @@ export default {
   data() {
       return {
           clientActive: 0,
-          boxs : [
+          boxs : [ // dati 
               {
                   image: "testimonials-1.jpg",
                   text: "Ability proceeds from a fusion of skills, knowledge,understanding and imagination, consolidated by experience.",
@@ -52,6 +58,7 @@ export default {
       }
   },
   methods: {
+
         avanti(){
 
             this.clientActive = 1;

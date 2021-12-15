@@ -1,18 +1,24 @@
 <template>
     <section id="news">
 
+        <!-- Contenitore -->
         <div id="container">
 
+            <!-- Parte di sopra -->
             <div class="sopra">
+                <!-- Titolo -->
                 <h1>
                     Our News
                 </h1>
+                <!-- Paragrafo -->
                 <p>
                     Sed ut perspiciatis unde omnis natus error sit voluptatem accusantium doloremque laudantium.
                 </p>
             </div>
 
+            <!-- Parte centrale -->
             <div class="centro">
+                <!-- Prende gli elementi di NewsElem, in base all'array -->
                 <NewsElem v-for="box, i in boxs" :key="i" :element="box"/>
             </div>
 
@@ -33,7 +39,7 @@ export default {
   },
   data() {
       return {
-          boxs : [
+          boxs : [  //array per la stampa dei box
               {
                   image: "related-service-2-700x441.jpg",
                   title: "Why You Need A SEO Agency Now",

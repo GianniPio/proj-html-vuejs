@@ -1,12 +1,17 @@
 <template>
   <div>
+    <!-- Header della pagina -->
     <SeoHeader/>
+    <!-- main della pagina -->
     <SeoMain/>
+
+    <!-- Footer della pagina -->
     <SeoFooter/>
   </div>
 </template>
 
 <script>
+// Componenti importati
 import SeoHeader from './components/SeoHeader.vue'
 import SeoMain from './components/SeoMain.vue'
 import SeoFooter from './components/SeoFooter.vue'

@@ -1,21 +1,28 @@
 <template>
     <section id="dove_lavoriamo">
 
+        <!-- Contenitore -->
         <div id="container">
 
+            <!-- Parte di sopra -->
             <div class="sopra">
+                <!-- Titolo -->
                 <h1>
                     Our Work
                 </h1>
+                <!-- Paragrafo -->
                 <p>
                     Sed ut perspiciatis unde omnis natus error sit voluptatem accusantium doloremque laudantium.
                 </p>
             </div>
 
+            <!-- Parte centrale -->
             <div class="centro">
+                <!-- Prende gli elementi di WhereElem, in base all'array -->
                 <WhereElem v-for="image, i in images" :key="i" :element="image" :index="i"/>
             </div>
 
+            <!-- Bottone -->
             <div class="sotto">
                 <button>VIEW OUR WORK</button>
             </div>

@@ -1,19 +1,24 @@
 <template>
     <section id="chi_siamo">
 
+        <!-- Container -->
         <div id="container">
 
+            <!-- Parte di sopra -->
             <div class="sopra">
+                <!-- Titolo -->
                 <h1>
                     Meet The New Agency SEO Template From The Avada Team
                 </h1>
+                <!-- Paragrafo -->
                 <p>
                     Sed ut perspiciatis unde omnis natus error sit voluptatem accusantium doloremque laudantium.
                 </p>
             </div>
 
+            <!-- Parte centrale -->
             <div class="centro">
-                <WhoElem v-for="box, i in boxs" :key="i" :element="box"/>
+                <WhoElem v-for="box, i in boxs" :key="i" :element="box"/> <!-- stampa gli elementi che si trovano in WhoElem, in base all'array -->
             </div>
 
         <img src="../../src/assets/images/agency-seo-desk-front.jpg" alt="foto desktop">
@@ -33,7 +38,7 @@ export default {
   },
   data() {
       return {
-          boxs : [
+          boxs : [  //Array per la stampa dei box
               {
                   icon: "fas fa-road",
                   title: "Establish Goals",

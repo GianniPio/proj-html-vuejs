@@ -20,14 +20,12 @@
                   <Menu v-for="voice, i in menu" :key="i" :voices="voice"/>  
                 </ul>
 
+                <!-- Bottoni -->
                 <button>
                     <span>GET IN TOUCH NOW</span>
                 </button>
 
                 </div>
-
-                <!-- Bottone -->
-                
                 
             </div>
 
@@ -56,6 +54,7 @@
 </template>
 
 <script>
+// Componente importato
 import Menu from "@/components/Menu.vue"
 
 export default {
@@ -66,7 +65,7 @@ export default {
 
   data() {
     return {
-        menu : [
+        menu : [  // array per la stampa del menu
             {
                 title: "Home",
                 link: "#",
